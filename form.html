@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Form</title>
+    </head>
+    <body>
+        <hr>
+        <a href="index.html">Перейти к списку собак</a>
+        <hr>
+        <form action="https://formspree.io/dmytro.malakhov@outlook.com" method="POST">
+            <label>
+                Ваше имя: <br>
+                <input type="text" name="client_name" placeholder="Введите ваше имя" required>
+            </label>
+            <br>
+
+            <label>
+                Ваш пароль: <br>
+                <input type="password" name="client_password" placeholder="Введите ваш пароль" required>
+            </label>
+            <br>
+
+            <label>
+                Ваш email: <br>
+                <input type="email" name="client_email" placeholder="Введите ваш email" required>
+            </label>
+            <br>
+
+            <label>
+                Ваше сообщение: <br>
+                <textarea name="client_message" cols="30" rows="10" placeholder="Введите ваше сообщение"></textarea>
+            </label>
+            <br>
+            <h3>Какая из предложиеных на странице собак вам понравилась больше всех?</h3>
+            <label>
+                <input type="radio" name="client_choise" value="Vel'sh-korgi" checked>Вельш-корги
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="client_choise" value="Chihuahua">Чихуахуа
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="client_choise" value="Shelti">Шелти
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="client_choise" value="Mops">Мопс
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="client_choise" value="Bigl'">Бигль
+            </label>
+            <br>
+            <h3>Взяли бы вы себе собаку с приюта?</h3>
+            <label>
+                <input type="checkbox" name="client_take" value="Yes" checked>Да
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="client_take" value="No'">Нет
+            </label>
+            <br>
+            <br>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+        </form>
+    </body>
+</html>
